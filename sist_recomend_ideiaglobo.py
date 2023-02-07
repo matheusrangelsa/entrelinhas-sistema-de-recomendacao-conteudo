@@ -2,11 +2,8 @@ import pandas as pd
 import os
 from time import sleep
 
-
 # Leitura do dataset de filmes
 dataset = pd.read_csv('filmes_projeto.csv') # removendo a pasta anterior e alocando na pasta atual
-
-
 
 os.system('cls' if os.name == 'nt' else 'clear') # Codigo para limpar a tela ao iniciar o programa
 
@@ -54,7 +51,6 @@ def genero():
 # Chamando a função para executá-la  ****ESSE TIPO DE COMENTARIO ACABA SENDO UM POUCO INUTIL E POLUI O CODIGO****
 lista_generos = genero()
 
-
 # Primeiro filtro do dataset com base nos critérios de duração e categorias
 def filter_movies(dataset, lista_generos, duracao_tempo_trajeto):
     # Cria uma lista vazia para armazenar os filmes filtrados
@@ -64,7 +60,6 @@ def filter_movies(dataset, lista_generos, duracao_tempo_trajeto):
 
 # Armazenamento dos resultados da função
 dataset_movies_filtered = filter_movies(dataset, lista_generos, duracao_tempo_trajeto)
-
 
 for i in range(0, 4):
     os.system('cls' if os.name == 'nt' else 'clear')    
