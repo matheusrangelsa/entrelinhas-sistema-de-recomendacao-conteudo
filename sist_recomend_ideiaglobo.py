@@ -8,7 +8,7 @@ dataset = pd.read_csv('filmes_projeto.csv') # removendo a pasta anterior e aloca
 
 
 
-os.system('cls' if os.name == 'nt' else 'clear') # Codigo para limpar a tela para iniciar o programa
+os.system('cls' if os.name == 'nt' else 'clear') # Codigo para limpar a tela ao iniciar o programa
 
 # recebendo input do user
 duracao_tempo_trajeto = int(input('\n\nInforme o tempo do seu trajeto no metrô em minutos (apenas números): '))
@@ -30,7 +30,7 @@ def genero():
     print(genres.to_string(index = False))
     
     # Lê a seleção de gêneros feita pelo usuário
-    selected = input('\nEscolha os gêneros abaixo digitando os número correspondentes separados por vírgula: ').split(",")
+    selected = input('\nEscolha os gêneros abaixo digitando os número correspondentes separados por vírgula: ').replace(' ', '').split(",") # tratando a entrada do usuario
     selected_options = []
 
     # Verifica se a seleção do usuário é válida e adiciona à lista de gêneros escolhidos
@@ -44,7 +44,7 @@ def genero():
         genres_selected = genres.loc[genres.Genero.isin(selected_options)]
         print("\n --------- Opções selecionadas ----------- \n")
         print(genres_selected.to_string(index = False))
-        print("\n -- ----------------------------- -- \n")
+        print("\n ----------------------------------------- \n")
         sleep(2)
     else:
         print("Nenhuma opção válida selecionada.")
