@@ -20,8 +20,6 @@ def genero():
         'Codigo': [int(i) for i in range(1, 8)] # isso aqui pode ser automatizado usando um len() pra ver quantos generos existem
     }
 
-    choices = []
-
     genres = pd.DataFrame(data = options)
     # formatando a saída para escolha dos generos
     print(genres.to_string(index = False))
