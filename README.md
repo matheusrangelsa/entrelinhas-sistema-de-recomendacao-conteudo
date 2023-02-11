@@ -11,14 +11,9 @@ O código está sendo melhorado ainda, mas por enquanto se seguir as instruçõe
    1.  Ler um arquivo CSV com informações sobre filmes;
    2.  Solicitar ao usuário o tempo disponível para assistir filmes;
    3.  Perguntar ao usuário qual dos gêneros de filmes disponíveis é o seu favorito;
-   4.  Aplicar o primeiro filtro e exibir uma lista de filmes que atendam às condições escolhidas;
-   5.  Converter os valores da coluna "Duração" de string para inteiro e adicionar à uma nova lista;
-   6.  Aplicar o segundo filtro que seleciona os filmes cuja soma das durações é menor ou igual ao tempo disponível informado pelo
-    usuário;
-   7.  Otimizar o segundo filtro incluindo um loop while para buscar outras combinações viáveis (quando houver mais de uma opção);
-   8.  Formatar a saída da lista de recomendações de filmes, exibindo apenas o título dos filmes;
-   9.  Perguntar ao usuário se deseja atualizar a recomendação ou encerrar o sistema;
-   10.  Exibir o filtro final com a última recomendação e armazenar a lista final para futuros acessos.
+   4.  Aplicar o primeiro filtro e gera uma pré-lista com os filmes que atendam às condições escolhidas de tempo x gêneros (incluída a a função "random.shuffle" do módulo "random" para embaralhar a ordem da lista antes de retorná-la);
+   5.  Aplicar o segundo filtro que seleciona os filmes cuja soma das durações é menor ou igual ao tempo disponível informado pelo usuário;
+   6.  Formatar a saída da lista de recomendações de filmes, exibindo o resultado das recomendações.
 
 <br><br><br>
 *Recomendo alterar para o tema dark ao visualizar o código no Google Colab :)*
