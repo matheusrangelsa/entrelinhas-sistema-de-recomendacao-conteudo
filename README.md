@@ -14,6 +14,10 @@ O código está sendo melhorado ainda, mas por enquanto se seguir as instruçõe
    4.  Aplicar o primeiro filtro e gera uma pré-lista com os filmes que atendam às condições escolhidas de tempo x gêneros;
    5.  Aplicar o segundo filtro que seleciona os filmes cuja soma das durações é menor ou igual ao tempo disponível informado pelo usuário;
    6.  Formatar a saída da lista de recomendações de filmes, exibindo o resultado das recomendações.
+<br><br>
+> **CUIDADO:** sempre busque atualizar o caminho do arquivo CSV (*filmes_projeto.csv*), pois dependendo do local que seja utilizado para rodar o código pode dar erro pois o arquivo não será encontrado se o ajuste de 'caminho' do CSV não for feito nos trechos de código das variáveis **datatset* e *data_set* dentro da seção "Executando o algoritmo de recomendação".
 
-<br><br><br>
+
+
+<br><br>
 *Recomendo alterar para o tema dark ao visualizar o código no Google Colab :)*
